@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  color: #fff;
+  -webkit-text-size-adjust: 100%;
+  letter-spacing: .2rem;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  font-family: Noto Sans JP, sans-serif;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+html, body, a {
+  -webkit-tap-highlight-color: #0000;
+  -webkit-font-variant-ligatures: no-common-ligatures;
+  font-variant-ligatures: no-common-ligatures;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+#canvas-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#canvas-container canvas {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#gui-container {
+  z-index: 3;
+  position: absolute;
+  bottom: 20px;
+}
+
+#media {
+  z-index: 2;
+  width: calc(80px + 16vmin);
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#media > div > div {
+  z-index: 2;
+}
+
+#footer {
+  color: #fff;
+  z-index: 2;
+  font-size: x-small;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#footer > a {
+  color: #00f;
+}
+
